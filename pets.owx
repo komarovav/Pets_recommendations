@@ -1,0 +1,382 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/userok/ontologies/2026/0/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/userok/ontologies/2026/0/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/userok/ontologies/2026/0/untitled-ontology-3/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Аквариум"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Долгая"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Домашнее_животное"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Класс_животного"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Клетка"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Короткая"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Млекопитающее"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Паукообразное"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Пресмыкающиеся"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Продолжительность_жизни"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Птицы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Рыбы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Свободное"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Средняя"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Террариум"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Условия_проживания"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#требует_условия_проживания"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Гуппи"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Золотая_рыбка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Канарейка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кошка"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Попугай"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Птицеед"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Скалярия"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Скорпион"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Собака"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Тарантул"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Удав"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Хомяк"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Черепаха"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ящерица"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Аквариум"/>
+        <Class IRI="#Условия_проживания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Долгая"/>
+        <Class IRI="#Продолжительность_жизни"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Класс_животного"/>
+        <Class IRI="#Домашнее_животное"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Клетка"/>
+        <Class IRI="#Условия_проживания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Короткая"/>
+        <Class IRI="#Продолжительность_жизни"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Млекопитающее"/>
+        <Class IRI="#Класс_животного"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Паукообразное"/>
+        <Class IRI="#Класс_животного"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Паукообразное"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#требует_условия_проживания"/>
+            <Class IRI="#Террариум"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Пресмыкающиеся"/>
+        <Class IRI="#Класс_животного"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Пресмыкающиеся"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#требует_условия_проживания"/>
+            <Class IRI="#Террариум"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Продолжительность_жизни"/>
+        <Class IRI="#Домашнее_животное"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Птицы"/>
+        <Class IRI="#Класс_животного"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Птицы"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Средняя"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Птицы"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#требует_условия_проживания"/>
+            <Class IRI="#Клетка"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Рыбы"/>
+        <Class IRI="#Класс_животного"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Рыбы"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Средняя"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Рыбы"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#требует_условия_проживания"/>
+            <Class IRI="#Аквариум"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Свободное"/>
+        <Class IRI="#Условия_проживания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Средняя"/>
+        <Class IRI="#Продолжительность_жизни"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Террариум"/>
+        <Class IRI="#Условия_проживания"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Условия_проживания"/>
+        <Class IRI="#Домашнее_животное"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Рыбы"/>
+        <NamedIndividual IRI="#Гуппи"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Рыбы"/>
+        <NamedIndividual IRI="#Золотая_рыбка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Птицы"/>
+        <NamedIndividual IRI="#Канарейка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Млекопитающее"/>
+        <NamedIndividual IRI="#Кошка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Долгая"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Кошка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#требует_условия_проживания"/>
+            <Class IRI="#Свободное"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Кошка"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Птицы"/>
+        <NamedIndividual IRI="#Попугай"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Паукообразное"/>
+        <NamedIndividual IRI="#Птицеед"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Короткая"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Птицеед"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Рыбы"/>
+        <NamedIndividual IRI="#Скалярия"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Паукообразное"/>
+        <NamedIndividual IRI="#Скорпион"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Короткая"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Скорпион"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Млекопитающее"/>
+        <NamedIndividual IRI="#Собака"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Долгая"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Собака"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#требует_условия_проживания"/>
+            <Class IRI="#Свободное"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Собака"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Паукообразное"/>
+        <NamedIndividual IRI="#Тарантул"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Средняя"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Тарантул"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пресмыкающиеся"/>
+        <NamedIndividual IRI="#Удав"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Долгая"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Удав"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Млекопитающее"/>
+        <NamedIndividual IRI="#Хомяк"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Короткая"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Хомяк"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#требует_условия_проживания"/>
+            <Class IRI="#Клетка"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Хомяк"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пресмыкающиеся"/>
+        <NamedIndividual IRI="#Черепаха"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Долгая"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Черепаха"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пресмыкающиеся"/>
+        <NamedIndividual IRI="#Ящерица"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+            <Class IRI="#Средняя"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Ящерица"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#требует_условия_проживания"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+        <Class IRI="#Класс_животного"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#требует_условия_проживания"/>
+        <Class IRI="#Класс_животного"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеет_продолжительность_жизни"/>
+        <Class IRI="#Продолжительность_жизни"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#требует_условия_проживания"/>
+        <Class IRI="#Условия_проживания"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
